@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<h1>Rotina de arremesso</h1>
+
+<div class="container">
+  <div class="card">
+    <h3>Alongamento</h3>
+    <p>Fazer um bom alongamento é muito importante para previnir lesões e melhorar a mobilidade</p>
+    <!-- Botão para abrir o modal -->
+    <button type="button" class="btn btn-secondary ver-video" data-video="dYKBeCjay_c">Ver vídeo</button>
+
+    <!-- Inicio Modal -->
+    <div id="myModal" class="modal">
+      <!-- inicio Conteúdo do modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+       <div class="iframe-container">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src=""
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      </div>
+      <!-- fim conteúdo modal -->
+    </div>
+    <!-- fim Modal -->
+  </div>
+  <!-- fim card -->
+</div>
+
+<script src="{{url_for('static', filename='js/teste.js')}}"></script>
+
+{% endblock content %}

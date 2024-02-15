@@ -1,0 +1,24 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div class="container">
+<section>
+  <h1 class="text-center">Treinos de arremesso</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="{{url_for('static',filename='imgs/rotina.gif')}}" alt="">
+      <div class="info">
+        <h4>Rotina de arremessos</h4>
+        <div class="duracao-btn">
+          <h5>duracao: 15 min</h5>
+          <a  href="{{url_for('arremessos.rotinaArremessos')}}"  class="btn btn-outline-light">></a>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+</section>
+</div>
+
+{% endblock content %}
+
+

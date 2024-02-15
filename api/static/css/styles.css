@@ -1,39 +1,3 @@
-:root{
-  --font-size:calc(1em + 1vw);
-  --font-size-texto: calc(0.3em + 1.8vw);
-  --font-size-quadro:calc(0.6em + 0.9vw);
-  --font-family: poppis, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
-}
-
-*{
-  margin: 0;
-  pad: 0;
-  box-sizing: border-box;
- 
-}
-body{
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  background-color: black;
-  color: white
-}
-h1,h2{
-  color: #AA4A0D;
-  font-weight: 900;
-}
-.custom-header{
-  display: flex;
-  width: auto;
-  height:80px ;
-}
-.custom-header img{
-  width: 140px;
-  max-width: 100%;
-}
-.container{
-  max-width: 800px;
-  pad: 20px;
-}
 .custom-opacity{
   opacity:0.5
 }
@@ -43,12 +7,19 @@ h1,h2{
   max-width: 800px;
   gap: 20px;
 }
+.card{
+  height: 100%;
+  width: 100%;
+}
 @media (max-width:600px){
+  .container{
+    max-width: 96%;
+  }
   .cards{
     display: flex;
     overflow: scroll;
   }
   .cards>div{
-    flex: 1 0 150px
+    flex: 1 0 auto
   }
 }
