@@ -1,9 +1,5 @@
-# Ballers
-Teste
+# Ballers - O que é o ballers?
 
-### Install
-$pip install -r requirements.txt
+Ballers nada mais é que um site criado por um basqueteiro para basqueteiros. O site ainda está em construção, entranto o primeiro treino de arremesso, está liberado.
 
-### Run
-$ flask --app main run
-
+Logo, você poderá ver treinos de arremesso, condicionamento físico, controle de bola e, além disso, terá acesso a conteúdos para estudar.
